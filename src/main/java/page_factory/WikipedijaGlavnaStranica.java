@@ -9,7 +9,7 @@ public class WikipedijaGlavnaStranica {
     WebDriver driver;
 
     @FindBy (linkText="Šport")
-    WebElement poveznica;
+    WebElement poveznicaSport;
 
     public WikipedijaGlavnaStranica(WebDriver driver){
         this.driver=driver;
@@ -17,7 +17,7 @@ public class WikipedijaGlavnaStranica {
     }
 
     public void clickLink(){
-        poveznica.click();
+        poveznicaSport.click();
     }
 
 

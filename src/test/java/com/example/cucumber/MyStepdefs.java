@@ -18,7 +18,7 @@ public class MyStepdefs {
 
     @Zadano("se nalazim na glavnoj stranici")
     public void seNalazimNaGlavnojStranici() {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Martin a ne Lucija\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\lucija.suprina\\Downloads\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://hr.wikipedia.org/wiki/Glavna_stranica");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -80,4 +80,8 @@ public class MyStepdefs {
         driver.close();
     }
 
+    @Kada("odaberem link Glazba")
+    public void odaberemLinkGlazba() {
+
+    }
 }
